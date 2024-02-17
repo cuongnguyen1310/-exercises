@@ -115,10 +115,10 @@ void getTopKElementAfter({
 }
 
 void statistic(List<int> arr, int topK) {
-  List<int> topMax = [];
-  List<int> topMin = [];
-  getTopKElementFirst(arr: arr, topK: topK, topMax: topMax, topMin: topMin);
-  getTopKElementAfter(arr: arr, topK: topK, topMax: topMax, topMin: topMin);
+  List<int> topMax = []; // mảng topMax có topK phần tử  lớn nhất được sắp xếp theo thứ tự giảm dần
+  List<int> topMin = []; // mảng topMin có topK phần tử nhỏ nhất được sắp xếp theo thứ tự tăng dần
+  getTopKElementFirst(arr: arr, topK: topK, topMax: topMax, topMin: topMin); // Mục đích: Lấy ra topK phần tử đầu tiên trong mảng arr rồi sắp xếp vào mảng topMax và topMin tương ứng
+  getTopKElementAfter(arr: arr, topK: topK, topMax: topMax, topMin: topMin); // Mục đích: Lấy ra phần tử sau đấy trong mảng arr rồi sắp xếp vào mảng topMax và topMin tương ứng
   String resultGTNN = "";
   String resultGTLN = "";
   for (int i = 0; i < topK; ++i) {
