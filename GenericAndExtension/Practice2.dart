@@ -8,7 +8,7 @@ void main(List<String> args) {
   int firstIndex = 0;
   int secondIndex = 1;
   var results = swap(list, firstIndex, secondIndex);
-  list[firstIndex] = results[firstIndex];
-  list[secondIndex] = results[secondIndex];
+  list[firstIndex] = results[0];
+  list[secondIndex] = results[1];
   print("After list: ${list}");
 }
