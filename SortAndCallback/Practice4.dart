@@ -5,10 +5,6 @@ final numbers = List.generate(10, (index) {
   return random.nextInt(100);
 });
 
-List swap(first, last) {
-  return [last, first];
-}
-
 // Output: sorted in ascending order
 bubbleSort(list) {
   for (int i = 0; i < list.length; ++i) {
